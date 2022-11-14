@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+      }
+      .main {
+        margin: auto;
+        max-width: 1200px;
+      }
+
+      .header {
+        position:fixed;
+        top:0px;
+        width:calc(min(100%, 1200px));
+        background-color: black;
+        color:white;
+        text-align: center;
+        font-size: 3em;
+      }
+      .headerBuffer {
+        height: 60px;
+      }
+      .boxContainer {
+        display:flex;
+        flex-direction: column;
+      }
+
+      .largeBox {
+        flex: 2 !important;
+      }
+      .box {
+        background-color: aqua;
+        font-size: 1em;
+        text-align: justify;
+        padding: 5px;
+        margin-bottom:20px;
+      }
+      .box img {
+        width:100%;
+      }
+      .solitaryBox {
+        flex: unset;
+        width: 100%;
+      }
+      .o1 {
+        order: 1;
+      }
+      .o2 {
+        order: 2;
+      }
+      .o1 {
+        order: 3;
+      }
+
+      @media screen and (min-width: 600px) {
+        .boxContainer {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+        .box {
+          flex: 1;
+          padding: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+        <div class="header">
+            Mon site web
+        </div>
+        <div class="headerBuffer">&nbsp;</div>
+      <div class="boxContainer">
+        <div class="box largeBox o2">
+          <h2>Titre principal</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic maxime
+            officia id sed unde, aliquam ratione omnis, impedit dolore possimus
+            earum numquam inventore. Accusantium dolore voluptatem doloremque
+            earum voluptas neque. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Provident rem porro, iusto ullam quasi quod error
+            exercitationem quo quibusdam fugiat explicabo beatae, earum placeat
+            quisquam ut eum, voluptates praesentium laborum? Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Laborum, non! Autem quas
+            maiores ut sint et quia numquam dicta tenetur cupiditate
+            dignissimos, ipsa error libero repellat, quam nam fugit veritatis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi neque
+            minus voluptas cupiditate, et suscipit corporis sapiente non rem
+            veniam aliquam, quas earum quam temporibus? Repellendus quisquam
+            praesentium nisi autem.
+          </p>
+        </div>
+        <div class="box o1">
+          <h2>Titre sencondaire</h2>
+          <p>
+            <img src="https://picsum.photos/id/598/600/400" alt="">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic maxime
+            officia id sed unde, aliquam ratione omnis, impedit dolore possimus
+            earum numquam inventore. Accusantium dolore voluptatem doloremque
+            earum voluptas neque. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Provident rem porro, iusto ullam quasi quod error
+            exercitationem quo quibusdam fugiat explicabo beatae, earum placeat
+            quisquam ut eum, voluptates praesentium laborum? Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Laborum, non! Autem quas
+            maiores ut sint et quia numquam dicta tenetur cupiditate
+            dignissimos, ipsa error libero repellat, quam nam fugit veritatis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi neque
+            minus voluptas cupiditate, et suscipit corporis sapiente non rem
+            veniam aliquam, quas earum quam temporibus? Repellendus quisquam
+            praesentium nisi autem.
+          </p>
+        </div>
+        <div class="box o3">
+          <h2>Titre secondaire</h2>
+          <p>
+            <img src="https://picsum.photos/id/642/600/400" alt="">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic maxime
+            officia id sed unde, aliquam ratione omnis, impedit dolore possimus
+            earum numquam inventore. Accusantium dolore voluptatem doloremque
+            earum voluptas neque. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Provident rem porro, iusto ullam quasi quod error
+            exercitationem quo quibusdam fugiat explicabo beatae, earum placeat
+            quisquam ut eum, voluptates praesentium laborum? Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Laborum, non! Autem quas
+            maiores ut sint et quia numquam dicta tenetur cupiditate
+            dignissimos, ipsa error libero repellat, quam nam fugit veritatis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi neque
+            minus voluptas cupiditate, et suscipit corporis sapiente non rem
+            veniam aliquam, quas earum quam temporibus? Repellendus quisquam
+            praesentium nisi autem.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
